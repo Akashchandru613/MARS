@@ -1,0 +1,52 @@
+[
+  {
+    "category": "factual",
+    "query": "What caused the 2008 global financial crisis?",
+    "reference": "The 2008 financial crisis was primarily caused by the collapse of the US housing bubble, fueled by subprime mortgage lending, mortgage-backed securities, and lack of regulatory oversight."
+  },
+  {
+    "category": "technical",
+    "query": "How does the transformer attention mechanism work in large language models?",
+    "reference": "The transformer attention mechanism uses queries, keys, and values to compute weighted sums of value vectors, allowing the model to attend to different parts of the input sequence simultaneously."
+  },
+  {
+    "category": "recent",
+    "query": "What are the main differences between LangGraph, AutoGen, and CrewAI for building multi-agent systems?",
+    "reference": "LangGraph offers fine-grained control via StateGraph, AutoGen uses conversational agent patterns, and CrewAI provides a role-based crew abstraction for agent collaboration."
+  },
+  {
+    "category": "multi-hop",
+    "query": "What technique does GPT-4 use for training and who pioneered it?",
+    "reference": "GPT-4 uses reinforcement learning from human feedback (RLHF), a technique pioneered by researchers including Paul Christiano and popularized through InstructGPT."
+  },
+  {
+    "category": "controversial",
+    "query": "What are the main arguments for and against nuclear energy as a climate solution?",
+    "reference": "Proponents argue nuclear energy is low-carbon and reliable; critics cite high costs, waste disposal challenges, and safety risks."
+  },
+  {
+    "category": "factual",
+    "query": "What is retrieval-augmented generation (RAG) and how does it reduce hallucinations?",
+    "reference": "RAG grounds LLM outputs in retrieved documents, reducing hallucinations by anchoring generation to factual source material rather than relying solely on model weights."
+  },
+  {
+    "category": "technical",
+    "query": "How does vector similarity search work in embedding-based retrieval systems?",
+    "reference": "Vector similarity search encodes text as dense embeddings and finds nearest neighbors using metrics like cosine similarity or dot product, enabling semantic rather than lexical matching."
+  },
+  {
+    "category": "factual",
+    "query": "What were the key outcomes of the Paris Climate Agreement?",
+    "reference": "The Paris Agreement committed nations to limit global warming to 1.5–2°C above pre-industrial levels through nationally determined contributions."
+  },
+  {
+    "category": "multi-hop",
+    "query": "Which organization developed LangChain and what problem does LangGraph solve that LangChain did not?",
+    "reference": "LangChain Inc developed LangChain. LangGraph extends it with stateful, cyclic graph execution for multi-agent workflows, addressing LangChain's limitations with non-linear control flow."
+  },
+  {
+    "category": "recent",
+    "query": "What are the benchmark results of Llama 3.1 70B compared to GPT-4?",
+    "reference": "Llama 3.1 70B performs competitively with GPT-4 on many benchmarks while being open-source and freely available for inference via APIs like Groq."
+  }
+]

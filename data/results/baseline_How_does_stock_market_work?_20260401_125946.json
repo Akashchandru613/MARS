@@ -1,0 +1,15 @@
+{
+  "query": "How does stock market work?",
+  "report": "### Executive Summary\nThe stock market is a complex system where stocks are bought and sold, influenced by various factors including economic conditions and investor sentiment. However, the provided source primarily focuses on stock market crashes and bear markets, highlighting their differences in terms of speed and duration. This report summarizes key findings related to stock market crashes and bear markets based on the given source.\n\n### Key Findings\n* Stock market crashes are characterized by quick and brief declines [Source: https://en.wikipedia.org/wiki/List_of_stock_market_crashes_and_bear_markets].\n* Bear markets are marked by slow and prolonged declines [Source: https://en.wikipedia.org/wiki/List_of_stock_market_crashes_and_bear_markets].\n* Stock market crashes and bear markets do not always occur within the same decline [Source: https://en.wikipedia.org/wiki/List_of_stock_market_crashes_and_bear_markets].\n* The provided source does not directly explain how the stock market works but offers insight into significant events that affect it [Source: https://en.wikipedia.org/wiki/List_of_stock_market_crashes_and_bear_markets].\n\n### Fact-Check\n- The distinction between stock market crashes and bear markets is **VERIFIED** by the provided source.\n- The statement about the occurrence of stock market crashes and bear markets is **VERIFIED**.\n- The explanation of how the stock market works is **UNVERIFIED** as the provided source primarily lists stock market crashes and bear markets without detailing the overall functioning of the stock market.\n\n### Final Report\nGiven the specific focus of the retrieved document on stock market crashes and bear markets, this report highlights the differences between these two phenomena and their characteristics. However, it does not fully address the query on how the stock market works, as the provided source lacks comprehensive information on the subject. For a complete understanding of the stock market's operation, additional sources would be necessary.",
+  "sources": [
+    {
+      "title": "List of stock market crashes and bear markets",
+      "url": "https://en.wikipedia.org/wiki/List_of_stock_market_crashes_and_bear_markets",
+      "snippet": "This is a list of stock market crashes and bear markets. The difference between the two relies on speed (how fast declines occur) and length (how long they last). Stock market crashes are quick and brief, while bear markets are slow and prolonged. Those two do not always happen within the same decline.\n\n\n== Table ==\n\n\n== See also ==\n1991 Indian economic crisis\nEconomic bubble\nList of banking crises\nList of economic crises\nList of largest daily changes in the Dow Jones Industrial Average\nList of recessions in the United Kingdom\nList of recessions in the United States\nStock market crashes in India\n\n\n== References ==\n\nSobel, Robert (1988).",
+      "source": "wikipedia"
+    }
+  ],
+  "latency_sec": 121.38,
+  "model": "llama-3.3-70b-versatile",
+  "token_count": 787
+}

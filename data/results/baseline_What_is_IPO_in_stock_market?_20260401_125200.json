@@ -1,0 +1,15 @@
+{
+  "query": "What is IPO in stock market?",
+  "report": "### Executive Summary\nAn Initial Public Offering (IPO) is a process where a privately held company issues stocks to the public for the first time, allowing it to raise capital from public investors. This process transforms the company into a public entity, enabling it to be listed on stock exchanges. Through an IPO, companies can raise new capital, provide liquidity to existing shareholders, and facilitate future capital raising.\n\n### Key Findings\n* An IPO is a public offering where shares of a company are sold to institutional and retail investors, typically underwritten by investment banks [Source: https://en.wikipedia.org/wiki/Initial_public_offering].\n* The primary purposes of an IPO include raising new equity capital, monetizing investments of private shareholders, and enabling easy trading of existing holdings [Source: https://en.wikipedia.org/wiki/Initial_public_offering].\n* After an IPO, the company's shares are traded freely in the open market [Source: https://en.wikipedia.org/wiki/Initial_public_offering].\n\n### Fact-Check\nAll key findings are **VERIFIED** as they are clearly supported by the provided source document from Wikipedia.\n\n### Final Report\nBased on the retrieved document from Wikipedia, the research query regarding what an IPO is in the stock market has been addressed. The key findings highlight the definition, purposes, and outcomes of an IPO, all of which are supported by the source document. No unverified or contradicted information was found in the provided sources. \n\nFor further information or more detailed explanations, consulting the original source document or additional resources may be necessary.",
+  "sources": [
+    {
+      "title": "Initial public offering",
+      "url": "https://en.wikipedia.org/wiki/Initial_public_offering",
+      "snippet": "An initial public offering (IPO) or stock launch is a public offering in which shares of a company are sold to institutional investors and usually also to retail investors. An IPO is typically underwritten by one or more investment banks, who also arrange for the shares to be listed on one or more stock exchanges. Through this process, colloquially known as floating or going public, a privately held company is transformed into a public company. IPOs can be used to raise new equity capital for companies, to monetize the investments of private shareholders such as company founders or private equity investors, and to enable easy trading of existing holdings or future capital raising by becoming publicly traded.\nAfter the IPO, shares are traded freely in the open market at what is known as the",
+      "source": "wikipedia"
+    }
+  ],
+  "latency_sec": 175.37,
+  "model": "llama-3.3-70b-versatile",
+  "token_count": 728
+}

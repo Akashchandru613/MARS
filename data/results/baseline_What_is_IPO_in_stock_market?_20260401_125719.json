@@ -1,0 +1,33 @@
+{
+  "query": "What is IPO in stock market?",
+  "report": "### Executive Summary\nAn Initial Public Offering (IPO) is a process where a private company sells its shares to the public for the first time to raise equity capital. This process transforms a privately-held company into a public company, allowing institutional and retail investors to participate in the company's growth. Through an IPO, companies can raise capital from public investors, providing an opportunity for investors to assess and potentially benefit from the company's future growth.\n\n### Key Findings\n* An IPO is a public offering in which shares of a company are sold to institutional investors and usually also to retail investors [Source: https://en.wikipedia.org/wiki/Initial_public_offering].\n* The process of an IPO transforms a privately-held company into a public company, allowing it to raise equity capital from public investors [Source: https://groww.in/p/what-is-ipo].\n* IPOs provide an opportunity for investors to participate in a company's early growth stage by offering shares to the public for the first time [Source: https://www.ebc.com/forex/how-to-invest-in-ipos-a-complete-guide-for-beginners-and-investors].\n* An IPO gives investors the chance to assess and potentially take exposure to the potential growth of a business [Source: https://kalkinemedia.com/au/video/what-is-ipo-in-stock-market].\n\n### Fact-Check\nAll key findings are **VERIFIED** by the provided sources. Each source supports the definition and purpose of an IPO, confirming that it is a process for private companies to become public by selling shares to raise capital and offer growth opportunities to investors.\n\n### Final Report\nThis research report confirms that an IPO is a critical process in the stock market where private companies transition to public companies by selling shares to raise capital. The information provided by the sources is consistent and supportive of the key findings, offering a clear understanding of what an IPO is and its significance in the financial markets.",
+  "sources": [
+    {
+      "title": "Initial public offering - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Initial_public_offering",
+      "snippet": "An initial public offering ( IPO ) or stock launch is a public offering in which shares of a company are sold to institutional investors and usually also to retail investors. An IPO is typically underwritten by one or more investment banks...",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "What is IPO ? - Meaning, Types, Process & Eligibility Groww",
+      "url": "https://groww.in/p/what-is-ipo",
+      "snippet": "Initial Public Offering ( IPO ) refers to the process where private companies sell their shares to the public to raise equity capital from the public investors. The process of IPO transforms a privately-held company into a public company. IPO and Types of IPO . What is IPO in Stock Market ?",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "How to Invest in IPOs : A Complete Guide for... | EBC Financial Group",
+      "url": "https://www.ebc.com/forex/how-to-invest-in-ipos-a-complete-guide-for-beginners-and-investors",
+      "snippet": "Initial Public Offerings ( IPOs ) are among the most anticipated events in financial markets . They allow private companies to raise capital by offering shares to the public for the first time, giving investors an opportunity to participate in a company\u2019s early growth stage.",
+      "source": "duckduckgo"
+    },
+    {
+      "title": "What is IPO in Stock Market ?",
+      "url": "https://kalkinemedia.com/au/video/what-is-ipo-in-stock-market",
+      "snippet": "IPO is a stock market launch of a company wherein shares are sold to retail investors as well as institutional investors. The process gives an opportunity to investors to assess and maybe take exposure to the potential growth of a business.",
+      "source": "duckduckgo"
+    }
+  ],
+  "latency_sec": 76.96,
+  "model": "llama-3.3-70b-versatile",
+  "token_count": 985
+}

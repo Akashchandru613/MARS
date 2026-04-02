@@ -1,0 +1,15 @@
+{
+  "query": "What caused the 2008 financial crisis?",
+  "report": "## Research Report: 2008 Financial Crisis\n### Executive Summary\nThe 2008 financial crisis was a major worldwide economic downturn centered in the United States. It was caused by a combination of factors, including excessive speculation on property values and deficiencies in regulation. The crisis was exacerbated by the collapse of mortgage-backed securities and derivatives linked to the U.S. real estate market.\n\n### Key Findings\n* Excessive speculation on property values by both homeowners and financial institutions contributed to the crisis [Source: https://en.wikipedia.org/wiki/2008_financial_crisis].\n* Predatory lending for subprime mortgages was a significant factor in the crisis [Source: https://en.wikipedia.org/wiki/2008_financial_crisis].\n* Deficiencies in regulation played a role in the crisis [Source: https://en.wikipedia.org/wiki/2008_financial_crisis].\n* The collapse of mortgage-backed securities (MBS) and derivatives linked to U.S. real estate was a key trigger for the crisis [Source: https://en.wikipedia.org/wiki/2008_financial_crisis].\n\n### Fact-Check\nAll key findings are VERIFIED by the provided source (https://en.wikipedia.org/wiki/2008_financial_crisis). The source clearly supports the claims regarding excessive speculation, predatory lending, regulatory deficiencies, and the collapse of MBS and derivatives.\n\n### Final Report\nThis research report summarizes the causes of the 2008 financial crisis based on the provided source. The crisis was a complex event with multiple contributing factors, including speculation, predatory lending, regulatory deficiencies, and the collapse of mortgage-backed securities and derivatives. All key findings are supported by the source, providing a clear understanding of the crisis's underlying causes.",
+  "sources": [
+    {
+      "title": "2008 financial crisis",
+      "url": "https://en.wikipedia.org/wiki/2008_financial_crisis",
+      "snippet": "A major worldwide financial crisis centered in the United States took place in 2008.  The causes included excessive speculation on property values by both homeowners and financial institutions, leading to the 2000s United States housing bubble. This was exacerbated by predatory lending for subprime mortgages and by deficiencies in regulation. Cash out refinancings had fueled an increase in consumption that could no longer be sustained when home prices declined. The first phase of the crisis was the subprime mortgage crisis, which began in early 2007, as mortgage-backed securities (MBS) tied to U.S. real estate, and a vast web of derivatives linked to those MBS, collapsed in value.",
+      "source": "wikipedia"
+    }
+  ],
+  "latency_sec": 74.84,
+  "model": "llama-3.3-70b-versatile",
+  "token_count": 756
+}
