@@ -10,6 +10,7 @@ Usage:
     python baseline/single_agent.py "What caused the 2008 financial crisis?"
 """
 
+import os
 import sys
 import json
 import time
@@ -74,12 +75,33 @@ def search_arxiv(query: str, max_results: int = 3) -> list[dict]:
     return results
 
 
+def search_tavily(query: str, max_results: int = 5) -> list[dict]:
+    """Search the web via Tavily (requires TAVILY_API_KEY env var)."""
+    results = []
+    try:
+        from tavily import TavilyClient
+        client = TavilyClient()
+        response = client.search(query=query, max_results=max_results)
+        for r in response.get("results", []):
+            results.append({
+                "title":   r.get("title", ""),
+                "url":     r.get("url", ""),
+                "snippet": r.get("content", "")[:800],
+                "source":  "tavily",
+            })
+    except Exception as e:
+        print(f"[search] Tavily error: {e}")
+    return results
+
+
 def gather_context(query: str) -> list[dict]:
-    """Aggregate search results from all three free sources."""
+    """Aggregate search results from all available sources."""
     docs = []
     docs.extend(search_duckduckgo(query, max_results=4))
     docs.extend(search_wikipedia(query))
     docs.extend(search_arxiv(query, max_results=2))
+    if os.environ.get("TAVILY_API_KEY"):
+        docs.extend(search_tavily(query, max_results=5))
     # deduplicate by URL
     seen, unique = set(), []
     for d in docs:
