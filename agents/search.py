@@ -2,7 +2,7 @@
 MARS — Search Agent
 ─────────────────────────────────────────────────────────────────────────────
 Takes sub-questions from the orchestrator, retrieves documents from three
-free sources (DuckDuckGo, Wikipedia, arXiv), reranks by relevance using
+free sources (DuckDuckGo, Wikipedia, arXiv) and optionally Tavily, reranks by relevance using
 sentence-transformers, and returns deduplicated Document objects.
 
 Owner: Akash Chandru
@@ -13,7 +13,7 @@ import sys
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent.parent))
 
 from pipeline.state import Document, ResearchState
-from config import MAX_SEARCH_RESULTS, MAX_DOCS_PER_QUERY
+from config import MAX_SEARCH_RESULTS, MAX_DOCS_PER_QUERY, TAVILY_API_KEY, USE_TAVILY
 
 from ddgs import DDGS
 import wikipedia as wikipedia_lib
@@ -52,6 +52,26 @@ def _wikipedia(query: str) -> list[Document]:
         )]
     except Exception:
         return []
+
+
+def _tavily(query: str, n: int = 5) -> list[Document]:
+    """Fetch results from Tavily web search API."""
+    docs = []
+    try:
+        from tavily import TavilyClient
+        client = TavilyClient(api_key=TAVILY_API_KEY)
+        response = client.search(query=query, max_results=n, search_depth="basic")
+        for r in response.get("results", []):
+            docs.append(Document(
+                title=r.get("title", ""),
+                url=r.get("url", ""),
+                snippet=r.get("content", "")[:500],
+                content=r.get("content", ""),
+                source="tavily",
+            ))
+    except Exception as e:
+        print(f"[search] Tavily error: {e}")
+    return docs
 
 
 def _arxiv(query: str, n: int = 3) -> list[Document]:
@@ -99,6 +119,8 @@ class SearchAgent:
         for q in sub_questions:
             raw = []
             raw.extend(_duckduckgo(q, n=MAX_SEARCH_RESULTS))
+            if USE_TAVILY and TAVILY_API_KEY:
+                raw.extend(_tavily(q, n=MAX_SEARCH_RESULTS))
             raw.extend(_wikipedia(q))
             raw.extend(_arxiv(q, n=2))
             ranked = _rerank(raw, q)

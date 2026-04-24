@@ -18,6 +18,10 @@ TEMPERATURE  = float(os.getenv("TEMPERATURE", "0.2"))
 MAX_SEARCH_RESULTS = int(os.getenv("MAX_SEARCH_RESULTS", "5"))
 MAX_DOCS_PER_QUERY = int(os.getenv("MAX_DOCS_PER_QUERY", "3"))
 
+# ── Tavily (optional, parallel web search source) ────────────────────────────
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
+USE_TAVILY     = os.getenv("USE_TAVILY", "false").lower() in ("true", "1", "yes")
+
 # ── Paths ─────────────────────────────────────────────────────────────────────
 import pathlib
 ROOT_DIR   = pathlib.Path(__file__).parent
