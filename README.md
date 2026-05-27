@@ -1,6 +1,6 @@
 # MARS — Multi-Agent Research System
 
-**Authors:** Akash Chandru · Abhishek Tuteja  
+**Authors:** Akash Chandru 
 **Phase:** 1 of 3 (Planning & Prototyping)  
 **Status:** Single-agent baseline complete · Multi-agent pipeline in development
 
